@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared Styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto ;
+}
+main > section{
+    margin-top: 130px;
+}
+.btn_primary{
+    font-size: 1.25rem;
+    color: white;
+    padding: 20px 25px;
+    font-weight: 600;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    border: none;
+}
+.display_flex{
+    display: flex;
+}
+.section_title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color:rgb(19, 19, 19);
+}
+.section_descripition{
+    font-size: 1rem;
+    font-weight: 400;
+    color:hsla(0,0%,45%,1);
+}
+/* dark 02 */
+.fnt_color2{
+    color:rgb(66, 66, 66);
+}
+.bg_clr{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* header styles */
+
+
+/* nav styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav_link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner styles */
+.banner_content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner_title{
+    font-size: 4rem;
+font-weight: 700;
+color:rgb(19, 19, 19);
+}
+.banner_img{
+    width: 100%;
+}
+
+/* group atyles */
+.group{
+    gap: 76px;
+    align-items: center;
+}
+.team_img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.g_content{
+    max-width: 530px;
+}
+.fnt_style{
+    font-weight: 500;
+    color:hsla(0,0%,45%,1);
+}
+.fnt_style3{
+    color: rgb(255, 144, 14);
+}
+/* media query */
+@media screen and (max-width:576px){
+    .navbar,
+    .nav_links,
+    .group{
+        flex-direction: column;
+    }
+    .team_img{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:576px)and (max-width:992px){
+    .group{
+        flex-direction: column;
+        text-align: center;
+    }
+}
